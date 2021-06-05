@@ -1,0 +1,271 @@
+body, html {
+    height: 100%;
+    font-size: 14px;
+    font-family: "work-sans", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+.wrapper  {
+    min-width: 1200px;
+    overflow: hidden;
+    min-height: calc(100vh - 92px);
+}
+
+.container  {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header_one, .header_one_right{
+    padding: 0 45px;
+    background: #dba500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+    font-family:'work-sans', Arial, Helvetica, sans-serif;
+    font-size: 14px, 0.8;
+    letter-spacing: 0.9px;
+    font-weight: 50;
+}
+
+.header_one_right {
+    list-style-type: none;
+}
+.language, .currency, .order {
+    border-right: solid #a37000;
+    padding: 0 20px 0 20px ;
+    cursor: pointer;
+}
+
+.location {
+    padding-left: 20px;
+}
+
+
+.language {
+    cursor: pointer;
+}
+
+
+.dropdown {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 120px;
+    height: 70px;
+    position: absolute;
+    top: 50px;
+    right: 99999px;
+    background-color: #fff;
+    z-index: 10;
+}
+
+.dropdown:before {
+    content: "";
+    display: block;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -20px;
+}
+
+
+
+.french, .german {
+    display: block;
+    padding: 15 0 15 20;
+    line-height: 0.5em;
+    padding: 10 18;
+    cursor: pointer;
+    color: #666;
+} 
+
+.us, .euro {
+    display: inline-block;
+    padding: 15 0 15 20;
+    line-height: 0.5em;
+    padding: 10 18;
+    cursor: pointer;
+    color: #666;
+} 
+
+.language:hover .dropdown {
+    right: 485px;
+}
+
+.currency:hover .dropdown {
+    right: 365px;
+}
+
+
+.header_two {
+    background-color: #fcb800;
+    padding: 20px;
+}
+
+.header_two_list {
+    margin: 0 auto;
+    padding: 0 25 0 25;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.logo_icon {
+    /* width: 156px; */
+    height: 32px;
+}
+
+.bar_icon {
+   
+    position: absolute;
+    left: 18%;
+}
+
+.menu_bar_icon {
+    font-size: 2rem;
+   
+}
+
+.search_product {
+    width: 100%;
+}
+.search_form {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 8px;
+    min-height: 42px;
+    margin-left: 68px;
+}
+
+.select_item, .input_search, .btn_search {
+    border-color: #fff;
+    border-style: none;
+    padding: 9.5px;
+    font-family: "work-sans", Arial, sans-serif;
+} 
+
+.select_item {
+    padding-left: 10px;
+    border-radius: 5px 0 0 5px;
+    border-right: 1px solid #ccc;
+    width: 10%;
+    text-decoration: none;
+}
+option {
+    text-align: center;
+}
+
+.input_search {
+    width: 65%;
+    color: #797777ad;
+    padding: 10 20 10 20;
+}
+
+.btn_search {
+    border-radius: 0 5px 5px 0;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 15px;
+}
+
+.extra_menus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px 0 0;
+    margin: 0;
+}
+
+.wishlist_icon, .cart_content, .account {
+    list-style: none;
+    margin-bottom: 0;
+    padding: 0 20px;
+}
+
+.heart, .bag, .login_icon {
+    font-size: 30px;
+}
+
+.heart {
+    position: relative;
+}
+.fav_counter, .cart_counter {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #000;
+  font-family: 'work-sans', Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  text-align: center;
+  font-weight: 900;
+  position: absolute;
+}
+
+.fav_counter {
+    top: 23px;
+    right: 28.2em;
+}
+.cart_counter {
+    top: 24px;
+    right: 21em;
+}
+.account {
+    position: relative;
+}
+
+.login{
+    position: absolute;
+    top: -6px;
+    left: 65px;
+}
+.register {
+    position: absolute;
+    top: 17px;
+    left: 65px;
+}
+
+.login, .register {
+    font-size: 16px;
+    font-family: "work-sans", Arial, sans-serif;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    line-height: 1em;
+}
+
+.hot_words {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    width: 50%;
+    padding: 10px 0 0 0;
+    margin-left: 19em;
+    list-style: none;
+}
+
+.hot_words_item_link {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "work-sans", Arial, sans-serif;
+    color: #666;
+    font-weight: 500;
+    letter-spacing: 0.9px;
+}
